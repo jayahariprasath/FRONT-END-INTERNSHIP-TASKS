@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="userForm" action="validated.html">
+        <div>
+            <label for="name" placeholder="Enter your Name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span id="nameError" class="error"></span>
+        </div><br>
+        <div>
+            <label for="email" placeholder="Email id">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
+        </div><br>
+        <div>
+           
+            <label for="password" placeholder="Password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error"></span>
+        </div><br>
+        <div>
+            <label for="mobile" placeholder="Mobile no">Mobile:</label>
+            <input type="text" id="mobile" name="mobile">
+            <span id="mobileError" class="error"></span>
+        </div><br>
+        <div>
+            <label for="aadhaar" placeholder="Enter Aadhaar number">Aadhaar:</label>
+            <input type="text" id="aadhaar" name="aadhaar">
+            <span id="aadhaarError" class="error"></span>
+        </div><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="validationMessage" style="color: green;"></div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
