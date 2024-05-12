@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shoppie Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+      <div class="header">
+        <h1>Smart Shoppie Mart</h1>
+      </div>
+    
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Categories</a>
+        <a href="#">Contact</a>
+      </div>
+    
+      <div class="row" >
+
+        <img class="img" src="sm1.jpg" height="400px" width="300px"><br>
+        <img class="img" src="wh1.jpeg" height="400px" width="300px"><br>
+        <img class="img" src="ret1.jpg" height="400px" width="300px"><br>
+        <img class="img" src="farm.jpeg" height="400px" width="300px"><br>
+      </div>
+      <div class="a1">
+        <div class="b1">
+        <button  class="btn" id="changeColorButton">Change Background Color</button>
+    </div></div>
+
+
+      <div class="footer">
+        <h2>Location</h2>
+        <address>17,Abc 1st street,Vaigai colony, Anna Nagar , Madurai - 625000 </address>
+      </div>
+      <script src="script.js"></script>
+
+      <style>
+        
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    padding:60px;
+    font-size: xx-large;
+    font-family: 'poppins';
+    text-align: center;
+    background: rgb(211, 44, 58);
+    color: rgb(233, 192, 11);
+}
+
+.navbar {
+    display: flex;
+    background-color: green;
+   
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+  
+}
+
+.navbar a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.row {  
+    display: flex;
+    padding: 40px;
+
+}
+
+ .img{
+    margin-right: 30px;
+    padding: 20px;
+    
+ }
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+.a1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1{
+    text-align: center;  
+    padding: 20px;
+}
+.btn{
+    padding:20px;
+    font-size: x-large;
+    font-family: "Arial";
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+      </style>
+</body>
+</html>
+
